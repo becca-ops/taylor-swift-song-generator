@@ -19,7 +19,7 @@ function generateSong(event) {
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let songElement = document.querySelector("#song");
-  songElement.innerHTML = `<div class="blink_me"> ⏳ Generating your very own Taylor Swift song about ${instructionsInput.value}</div>`;
+  songElement.innerHTML = `<div class="blink_me"> ⏳ Generating your very own Taylor Swift song about "${instructionsInput.value}"</div>`;
 
   console.log("Generating song");
   console.log(`Prompt: ${prompt}`);
